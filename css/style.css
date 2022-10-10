@@ -8,15 +8,20 @@
     font-family: 'Public Sans', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .btn {
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
     color: hsl(0, 0%, 100%);
     background-image: linear-gradient(90deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%) 100%);
+    width: 128.38px;
 }
 
-/* .colors {
+.colors {
     color: hsl(233, 8%, 62%);
     color: hsl(220, 16%, 96%);
     color: hsl(0, 0%, 98%);
@@ -25,15 +30,18 @@
     color: hsl(233, 26%, 24%);
     color: hsl(136, 65%, 51%);
     color: hsl(192, 70%, 51%);
-} */
+}
 
 /* Header */
 header {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1.2rem 0;
-    background-color: hsl(0, 0%, 100%);;
+    padding: 1rem 0;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    z-index: 2;
 }
 
 header ul {
@@ -42,7 +50,54 @@ header ul {
 }
 
 header a {
-    color: hsl(233, 8%, 62%);;
+    color: hsl(233, 8%, 62%);
 }
 
 /* First section */
+#presentation {
+    display: flex;
+    background-color: hsl(0, 0%, 98%);
+    height: 610px;
+}
+
+#left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 70px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    max-width: 410px;
+}
+
+#left p {
+    color: hsl(233, 8%, 62%);
+    line-height: 25px;
+    max-width: 410px;
+}
+
+#right {
+    flex: 1;
+}
+
+#img-bg {
+    position: absolute;
+    width: 70vw;
+    height: 800px;
+    top: -130px;
+    right: -20vw;
+}
+
+#img-content {
+    position: absolute;
+    width: 48vw;
+    height: 800px;
+    top: -40px;
+    right: -110px;
+}
