@@ -12,6 +12,10 @@ html {
     overflow-x: hidden;
 }
 
+.hide {
+    display: none; 
+}
+
 .btn {
     padding: 10px 20px;
     border-radius: 20px;
@@ -32,15 +36,8 @@ h2 {
     margin-bottom: 30px;
 }
 
-.colors {
+a {
     color: hsl(233, 8%, 62%);
-    color: hsl(220, 16%, 96%);
-    color: hsl(0, 0%, 98%);
-    color: hsl(0, 0%, 100%);
-
-    color: hsl(233, 26%, 24%);
-    color: hsl(136, 65%, 51%);
-    color: hsl(192, 70%, 51%);
 }
 
 /* Header */
@@ -58,10 +55,6 @@ header {
 header ul {
     display: flex;
     gap: 1rem; 
-}
-
-header a {
-    color: hsl(233, 8%, 62%);
 }
 
 /* First section */
@@ -186,4 +179,71 @@ article h4 {
 .text {
     font-size: 14px;
     line-height: 20px;
+}
+
+/* footer */
+footer {
+    background-color: hsl(233, 26%, 24%);
+    padding: 50px 20px 20px;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-footer {
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+#redes img {
+    margin-right: 8px;
+}
+
+footer nav {
+    display: flex;
+    gap: 100px;
+    flex: .6;
+}
+
+footer nav li {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+#button-copy {
+    text-align: right;
+}
+
+footer button {
+    margin-bottom: 30px;
+}
+
+.attribution { 
+    color: #fff;
+    font-size: 14px; 
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.attribution a {
+    color: hsl(136, 65%, 51%);
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        justify-content: space-between;
+        padding: 20px;
+    }
+    #btn-mobile {
+        display: block;
+        background: none;
+        border: none;
+        padding: 10px;
+    }
+    #nav, #btn-header {
+        display: none;
+    }
 }
